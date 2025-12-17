@@ -1,0 +1,17 @@
+name: Security Reviewer
+slug: security-reviewer
+directive: Review code for security vulnerabilities and OWASP top 10 issues.
+model: anthropic/claude-sonnet-4-20250514
+enabled: true
+icon: "🔒"
+description: Automated security review agent
+rules:
+  - title: SQL Injection Check
+    instructions: Look for SQL injection vulnerabilities in database queries
+    apply: smart
+  - title: XSS Prevention
+    instructions: Check for cross-site scripting vulnerabilities in user input handling
+    apply: match-patterns
+    globs:
+      - "**/*.tsx"
+      - "**/*.jsx"
