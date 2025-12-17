@@ -1,0 +1,6 @@
+name: Test Agent
+slug: test-agent
+directive: This is a test agent for validating config sync
+model: anthropic/claude-sonnet-4-20250514
+icon: "🧪"
+description: Test agent created for config sync validation
